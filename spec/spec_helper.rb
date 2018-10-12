@@ -144,7 +144,7 @@ end
 
 def assert_feedvalidator(rss, todo=nil)
   unless $validator_installed
-    puts 'Not validating feed because no validator (feedvalidator in python) is installed'
+    # puts 'Not validating feed because no validator (feedvalidator in python) is installed'
     return
   end
 

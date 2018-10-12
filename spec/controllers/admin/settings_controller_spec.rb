@@ -14,13 +14,19 @@ describe Admin::SettingsController do
   describe "#index" do
     before(:each) do
       get :index
+    
     end
     
     it 'should render index' do  
       response.should render_template('index')
     end
   end
-
+  
+  # describe '.migrate' do
+  #   # post :migrate
+  #   assert_response :redirect, :action => 'update_database'
+  # end
+  
   describe 'write action' do
     before(:each) do
       get :write
